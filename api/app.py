@@ -10,7 +10,7 @@ from PIL import Image
 import numpy as np
 
 app = Flask(__name__)
-model = keras.models.load_model('./model/mnist_cnn.h5')
+model = keras.models.load_model('api/mnist_cnn.h5')
 
 @app.route("/predict", methods=['POST'])
 def predict():
